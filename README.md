@@ -14,7 +14,7 @@
 - Ensure that Checksum >> CHECKSUM_BY_HARDWARE is enabled 
 - Cortex M7 >> Enable Instruction Prefetch, CPU ICache and CPU DCache
 
-Default memory setup should work ok, but more advanced setup covered here: https://www.youtube.com/watch?v=Wg3edgNUsTk (Requires editing Check LWIP>>Target>>ethernetif.c and XXXX_Flash.Id in the root directory)
+Default memory setup should work ok, but more advanced setup covered here: https://www.youtube.com/watch?v=Wg3edgNUsTk (Requires editing LWIP>>Target>>ethernetif.c and XXXX_Flash.Id in the root directory)
 
 Build Project, check "Build Analyzer" and select the "Memory Details" sub tab. This will show the memory locations for the buffers and the DMA descriptors.
 
