@@ -40,7 +40,7 @@ Build and deploy the code.
 
 **The device get an IP address via DHCP and will now be pingable.**
 
-To set a dynamic host name (Note this runs, but not sure whether it works, still need to check DHCP exchange in Wireshark):
+To set a dynamic host name:
 
 Modify LWIP>>Target>>lwipopts.h to add:
 
@@ -54,7 +54,7 @@ Then add the following to main.c:
 
 ```C
   /* USER CODE BEGIN 2 */
-  netif_set_hostname(&gnetif, "My Custom Board");
+  netif_set_hostname(&gnetif, "MyBoard");
   /* USER CODE END 2 */
 ```
 
