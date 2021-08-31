@@ -5,8 +5,6 @@
 - Select board
 - RCC >> HSE set to Crystal/Ceramic Resonator, LSE Set to Disable
 - Go to clock configuration, check input frequency is 8MHz, change HCLK to 216MHz (Max)
-- Optional: Connectivity >> I2C1, enable as I2C (used for reading/writing EEPROM). Change SCL from PB6 to PB8 (left click PB8 on MCU diagram and select I2C1_SCL)
-- Optional: Connectivity >> SPI1, enable as Full-Duplex Master (for reading/writing ADC)
 - Connectivity >> ETH (check GPIOs are correct, should be if selected the correct board), mode should be RMII
 - For some boards there is a complex memory setup procedure, doesnt seem to be the case for this one (see youtube link below)
 - Middleware LWIP - check enabled
